@@ -1,0 +1,3 @@
+## Gitblitへようこそ
+
+[Git](http://www.git-scm.com) リポジトリを簡単にホスティング、閲覧できます。
