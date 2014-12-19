@@ -145,6 +145,7 @@ public class MailService implements Runnable {
 			if (StringUtils.isEmpty(fromAddress)) {
 				fromAddress = "gitblit@gitblit.com";
 			}
+			mailing.from = MimeUtility.encodeText(mailing.from, "UTF-8", "B");
 			InternetAddress from = new InternetAddress(fromAddress, mailing.from == null ? "Gitblit" : mailing.from);
 			message.setFrom(from);
 
